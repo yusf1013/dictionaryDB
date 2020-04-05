@@ -22,7 +22,7 @@ public class Main {
         while (scanner.hasNext())
         {
             String word = scanner.next(), url = baseUrl + word;
-            Document document = null;
+            Document document;
             try {
                 document = Jsoup.connect(url).get();
                 System.out.println(document.title());
