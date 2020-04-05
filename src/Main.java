@@ -18,6 +18,7 @@ public class Main {
             scanner = new Scanner(file);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+            System.out.println("File not found");
         }
         while (scanner.hasNext())
         {
